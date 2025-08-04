@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/task_3_style.css">
+</head>
+
+
+
+<body>
+    <h1>Job Application</h1>
+    <div id="main">
+        <form action="submit" method="get" name="myform" onsubmit="return validation()">
+            <h1>Registration</h1>
+            <h1 id="underline"></h1>
+            <div class="fields">
+                <div id="left_text">
+                    <h2>Full name</h2>
+                    <input type="text" id="fname" />
+                </div>
+
+
+            </div>
+            <div class="fields">
+                <h2>Email Address</h2>
+                <input type="email" id="email" />
+            </div>
+            <div class="fields">
+                <h2>Phone Number</h2>
+                <input type="number" id=number placeholder="+88" />
+            </div>
+            <div class="fields">
+                <h2>Password</h2>
+                <!-- < input type="password" id="password" /> -->
+                <input type="password" name="" id="password">
+            </div>
+
+
+
+            <div class="fields">
+                <!-- <label for="experience">Experience Level:</label>   -->
+                <h2>Experience Level:</h2>
+                <select id="experience" name="experience">
+                    <option value="" disabled selected>Select experience level</option>
+                    <option value="entry">Entry Level (0–2 years)</option>
+                    <option value="mid">Mid Level (3–5 years)</option>
+                    <option value="senior">Senior Level (6–10 years)</option>
+                    <option value="executive">Executive (10+ years)</option>
+                </select>
+            </div>
+
+
+
+
+
+
+
+            <div class="fields">
+                <!-- <label for="salary">Expected Salary:</label> -->
+                <h2>Expected Salary:</h2>
+                <input type="number" id="salary" name="salary" min="1" placeholder="$">
+
+            </div>
+
+
+            <div class="fields">
+                <input type="checkbox" id="checkbox" />
+                <h2>I agree to the Terms & Conditions and Privacy Policy</h2>
+            </div>
+
+            <div class="fields">
+                <input type="submit" value="Submit Application" id="confirm" />
+                <!-- <button>Confirm</button> -->
+            </div>
+        </form>
+    </div>
+    <script src="../JS/task_3_valid.js"></script>
+
+</body>
+
+</html>
